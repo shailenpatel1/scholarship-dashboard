@@ -1,0 +1,191 @@
+.App {
+  text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #264254;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.contents {
+  align-content: 'center';
+}
+.general-stats-div {
+  padding: 10%;
+  overflow-y:scroll;
+  position:relative;
+  height:100%;
+}
+.general-stats {
+  color: #274255;
+  font-style: 'Arial';
+  text-align: center;
+  margin: 10%;
+}
+
+.infoText {
+  margin-left: 8px;
+  margin-top: 8px;
+  color: #000000;
+  font-size: 205%;
+}
+
+.map-marker {
+  /* adjusting for the marker dimensions
+  so that it is centered on coordinates */
+  margin-left: -8px;
+  margin-top: -8px;
+}
+
+.map-marker.map-clickable {
+  cursor: pointer;
+}
+
+.pulse {
+  width: 3px;
+  height: 3px;
+  border: 1px solid #61dafb;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background-color: #716f42;
+  z-index: 10;
+  position: absolute;
+}
+
+.cityInfo {
+  color: #264254;
+  font-size: 100%;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.container {
+  height: 20%;
+  background-color: #282c34;
+}
+
+.floatleft {
+  float:left;
+  width: 60%;
+  height: 100%;
+}
+
+.floatright {
+  float:right;
+  width: 40%;
+  height: 100%;
+}
+
+.cardHeaderText {
+  margin-left: 8px;
+  margin-top: 8px;
+  color: #000000;
+}
+
+.title {
+  font-size: 5%;
+}
+
+.cardHeader {
+  margin-left: 8px;
+  margin-top: 8px;
+  font-size: 125%;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+
+/* .map-marker .dot {
+  order: 2px solid #fff601;
+  background: transparent;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  height: 50px;
+  width: 50px;
+  -webkit-animation: pulse 3s ease-out;
+  -moz-animation: pulse 3s ease-out;
+  animation: pulse 3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: 1;
+  opacity: 0;
+} */
+
+@-moz-keyframes pulse {
+  0% {
+     -moz-transform: scale(0);
+     opacity: 0.0;
+  }
+  25% {
+     -moz-transform: scale(0);
+     opacity: 0.1;
+  }
+  50% {
+     -moz-transform: scale(0.1);
+     opacity: 0.3;
+  }
+  75% {
+     -moz-transform: scale(0.5);
+     opacity: 0.5;
+  }
+  100% {
+     -moz-transform: scale(1);
+     opacity: 0.0;
+  }
+ }
+ @-webkit-keyframes pulse {
+  0% {
+     -webkit-transform: scale(0);
+     opacity: 0.0;
+  }
+  25% {
+     -webkit-transform: scale(0);
+     opacity: 0.1;
+  }
+  50% {
+     -webkit-transform: scale(0.1);
+     opacity: 0.3;
+  }
+  75% {
+     -webkit-transform: scale(0.5);
+     opacity: 0.5;
+  }
+  100% {
+     -webkit-transform: scale(1);
+     opacity: 0.0;
+  }
+ }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
