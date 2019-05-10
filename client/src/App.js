@@ -121,6 +121,7 @@ class App extends Component {
 
   dataCallback = (results, file) => {
     let currSchool = results.data[0].Institution;
+    schoolsArray.push(currSchool);
     let totalGrant = 0;
     let latitude = results.data[0].Latitude;
     let longitude = results.data[0].Longitude;
