@@ -12,3 +12,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#bannerimage {
+  width: 100%;
+  background-image: url(acf-logo.png);
+  height: 90px;
+  background-color: #274255;
+  background-position: left;
+  background-repeat: no-repeat;
+}
