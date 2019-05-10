@@ -200,8 +200,8 @@ class App extends Component {
           "state": currState,
           "yearlyList": yearByYearGrant,
         });
-        schoolsArray.push(currSchool);
         currSchool = results.data[i].Institution;
+        schoolsArray.push(currSchool);
         yearByYearGrant = [];
         totalGrant = 0;
       }
