@@ -126,7 +126,7 @@ class App extends Component {
     let longitude = results.data[0].Longitude;
     let currState = zipcodes.lookup(results.data[0].PayeeZip).state;
     let yearByYearGrant = [];
-
+    var count = 0;
     var i = 0;
     while (i < results.data.length) {
       //  @@@@@@@@@@@@@@
@@ -189,6 +189,7 @@ class App extends Component {
         i++;
       }
       else {
+        count++;
         dataObjects.push({
           "zoomLevel": 5,
           "scale": 0.5,
@@ -199,8 +200,8 @@ class App extends Component {
           "state": currState,
           "yearlyList": yearByYearGrant,
         });
-        currSchool = results.data[i].Institution;
         schoolsArray.push(currSchool);
+        currSchool = results.data[i].Institution;
         yearByYearGrant = [];
         totalGrant = 0;
       }
